@@ -203,6 +203,7 @@
 
     .aside{
         height: 100vh;
+        margin-bottom: 1px;
 
     }
     aside > img{
