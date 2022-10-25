@@ -1,157 +1,319 @@
-aside{
-    top: 0;
-    position: fixed;
-    width: 300px;
-    background-color: rgb(48, 48, 48);
-    color: white;
-    height: fit-content;
-    margin-left: 150px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    text-align: center;
-    font-family: 'Orbitron', sans-serif;
-    z-index: 1;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Raleway:ital,wght@0,200;1,200&display=swap');
+
+@media screen and (min-width:1800px) {
+    aside{
+        top: 0;
+        position: fixed;
+        width: 300px;
+        background-color: rgb(48, 48, 48);
+        color: white;
+        height: fit-content;
+        margin-left: 150px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        font-family: 'Orbitron', sans-serif;
+        z-index: 1;
+    }
+
+    .decorationTop{
+        height: 40px;
+        margin-bottom: 20px;
+        background-color:rgb(237, 237, 37);
+    }
+
+    html{
+        min-width: 1000px;
+        height: 100%;
+        background-image: url("backround1.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    body{
+        margin-top: auto;
+        margin-bottom: auto;
+        min-width: 1000px;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        width: 90%;
+    }
+
+
+
+    aside > img{
+        height: 150px;
+        border-radius: 90px;
+        width: 150px;
+        border: 5px white solid;
+        padding: 5px;
+        transition: transform .2s;
+        margin-top: 10px;
+        margin-bottom: 10px
+    }
+
+    aside > img:hover{
+        transform: scale(1.2);
+        background-color: rgb(225, 225, 36);
+    }
+
+    aside > h3{
+        margin-top: 5px;
+        margin-bottom: 5px
+    }
+
+    aside > h4{
+        margin-bottom: 5px;
+    }
+
+    aside > h2{
+        height: 30px;
+    }
+
+
+    .sideFooter > a :hover{
+        color: black;
+    }
+
+    .sideFooter {
+        box-sizing: border-box;
+        width: 100%;
+        font-size: 30px;
+        position: relative;
+        margin-top: 470px;
+        justify-content: space-between;
+        color:  rgb(225, 225, 36);
+        z-index: 2;    
+        padding-bottom: 20px;
+    }
+
+    .main1{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        background-color: rgb(76, 76, 76);
+        color: white;
+        font-family: 'Orbitron', sans-serif;
+        width: 80%;
+        margin-top: 90px;
+        margin-bottom: 90px;
+        height: 770px;
+        padding-left: 15%;
+    }
+
+    .main1 > h1{
+        font-size: 60px;
+        margin-top: 20px;
+        box-sizing: border-box;
+        padding-top: 40px;
+        padding-bottom: 10px;
+        color:rgb(237, 237, 37);
+    }
+
+    .main1 > p{
+        box-sizing: border-box;
+        padding-bottom: 5px;
+        font-size: 20px;
+    }
+
+    .pastExp{
+        display: inline-flex;
+        justify-content: space-between;
+        width: 70%;
+        padding-top: 10px;
+    }
+
+    .pastExp >.exp > ul >li > a{
+        text-decoration: none;
+        color: white;
+    }
+    .pastExp >.exp > ul >li :hover{
+        color: yellow;
+    }
+
+    .pastExp >.exp > ul > li {
+        list-style: none;
+        text-align: left;
+    }
+
+    .pastExp > .exp > h6{
+        font-size: 20px;
+        margin-bottom: 5px;
+        text-align: left;
+        box-sizing: border-box;
+        color:rgb(237, 237, 37);
+    }
+
+    .pastExp > .exp > ul{
+        padding-left: 10px;
+    }
+
+    .mainFooter{
+        box-sizing: border-box;
+        padding-top: 60px;
+        font-size: 16.5px;
+        padding-left: 200px;
+        padding-right: 100px;
+    }
+
+    .main1 > p > a{
+        text-decoration: none;
+        color: white;
+    }
+    .main1> p  :hover{
+        color: yellow;
+    }
 }
 
-.decorationTop{
-    height: 40px;
-    margin-bottom: 20px;
-    background-color:rgb(237, 237, 37);
-}
+@media screen and (max-width:1799px) {
 
-html{
-    min-width: 1000px;
-    height: 100%;
-    background-image: url("backround1.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+    body{
+        background-image: url("backround1.jpeg");
+        color: white;
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
 
-body{
-    margin-top: auto;
-    margin-bottom: auto;
-    min-width: 1000px;
-}
+    aside{
+        align-items: center;
+        text-align: center;
+        font-family: 'Orbitron';
+        background-color: rgb(76, 76, 76);
+        transform: translate(-50%, -50%);
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        min-width: 300px;
+        border-radius: 10px;
+    }
+
+    .decorationTop{
+        height: 25px;
+        background-color: yellow;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .aside{
+        height: 100vh;
+
+    }
+    aside > img{
+        height: 100px;
+        border-radius: 90px;
+        width: 100px;
+        border: 5px white solid;
+        padding: 5px;
+        transition: transform .2s;
+        margin-top: 10px;
+        margin-bottom: 10px
+    }
+
+    aside > img:hover{
+        transform: scale(1.2);
+        background-color: rgb(225, 225, 36);
+    }
+
+    .sideFooter{
+        padding-bottom: 5px;
+        font-size: 30px;
+    }
+
+    aside > h2{
+        margin-bottom: 5px;
+    }
+
+    aside > h4{
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    aside > h3{
+        margin-top:10px;
+        margin-bottom: 20px;
+    }
+
+    .mainContainer{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main1{
+        text-align: center;
+        background-color:  rgb(76, 76, 76);
+        border-radius: 15px;
+        height: fit-content;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    .mainDecoration{
+        height: 30px;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: yellow;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .main1 > h1{
+        font-size: 40px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .main1 > p{
+        margin: 5px;
+        margin-bottom: 15px;
+    }
+
+    .main1 > p > a{
+        text-decoration: none;
+        color:yellow;
+    }
+
+    .main1 > .pastExp > .exp > h6{
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: 15px;
+        color: yellow;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .main1 > .pastExp > .exp > ul{
+        margin-top: 5px;
+        padding-left: 20px;
+        text-decoration: none;
+    }
+
+    .main1 > .pastExp > .exp > ul > li{
+        text-decoration: none;
+        list-style: none;
+        text-align: left;
+    }
+
+    .main1 > .pastExp > .exp > ul > li > a{
+        text-decoration: none;
+        color:white;
+    }
+
+    .mainFooter{
+        padding: 10px;
+        padding-top: 30px;
+    }
+
+    .sideFooter > a :hover{
+        color: black;
+    }
 
 
-
-aside > img{
-    height: 150px;
-    border-radius: 90px;
-    width: 150px;
-    border: 5px white solid;
-    padding: 5px;
-    transition: transform .2s;
-    margin-top: 10px;
-    margin-bottom: 10px
-}
-
-aside > img:hover{
-    transform: scale(1.2);
-    background-color: rgb(225, 225, 36);
-}
-
-aside > h3{
-    margin-top: 5px;
-    margin-bottom: 5px
-}
-
-aside > h4{
-    margin-bottom: 5px;
-}
-
-aside > h2{
-    height: 30px;
-}
-
-
-.sideFooter > a :hover{
-    color: black;
-}
-
-.sideFooter {
-    box-sizing: border-box;
-    width: 100%;
-    font-size: 30px;
-    position: relative;
-    margin-top: 470px;
-    justify-content: space-between;
-    color:  rgb(225, 225, 36);
-    z-index: 2;    
-    padding-bottom: 20px;
-}
-
-.main1{
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    background-color: rgb(76, 76, 76);
-    color: white;
-    font-family: 'Orbitron', sans-serif;
-    width: 80%;
-    margin-top: 90px;
-    height: 770px;
-    padding-left: 15%;
-}
-
-.main1 > h1{
-    font-size: 60px;
-    margin-top: 20px;
-    box-sizing: border-box;
-    padding-top: 40px;
-    padding-bottom: 10px;
-    color:rgb(237, 237, 37);
-}
-
-.main1 > p{
-    box-sizing: border-box;
-    padding-bottom: 5px;
-    font-size: 20px;
-}
-
-.pastExp{
-    display: inline-flex;
-    justify-content: space-between;
-    width: 70%;
-    padding-top: 10px;
-}
-
-.pastExp >.exp > ul >li > a{
-    text-decoration: none;
-    color: white;
-}
-.pastExp >.exp > ul >li :hover{
-    color: yellow;
-}
-
-.pastExp >.exp > ul > li {
-    list-style: none;
-    text-align: left;
-}
-
-.pastExp > .exp > h6{
-    font-size: 20px;
-    margin-bottom: 5px;
-    text-align: left;
-    box-sizing: border-box;
-    color:rgb(237, 237, 37);
-}
-
-.pastExp > .exp > ul{
-    padding-left: 10px;
-}
-
-.mainFooter{
-    box-sizing: border-box;
-    padding-top: 60px;
-    font-size: 16.5px;
-}
-
-.main1 > p > a{
-    text-decoration: none;
-    color: white;
-}
-.main1> p  :hover{
-    color: yellow;
 }
